@@ -33,7 +33,7 @@ class Main(object):
         bt = urwid.BigText('code bjorked', urwid.HalfBlock7x7Font())
         bt = urwid.Padding(bt, 'center', None)
         bt = urwid.Filler(bt, 'middle', None, 7)
-        bt = urwid.AttrMap(bt, 'pass')
+        bt = urwid.AttrMap(bt, 'fail')
         bt = urwid.LineBox(bt)
 
         pile = urwid.Pile([bt])
