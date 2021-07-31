@@ -36,7 +36,7 @@ class Main(object):
         bt = urwid.AttrMap(bt, 'pass')
         bt = urwid.LineBox(bt)
 
-        pile = urwid.Pile([topcol, bt])
+        pile = urwid.Pile([bt])
 
         self.loop = urwid.MainLoop(pile, palette)
 
