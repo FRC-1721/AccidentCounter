@@ -41,7 +41,7 @@ class Main(object):
         self.loop = urwid.MainLoop(pile, palette)
 
         self.loop.set_alarm_at(time.time() + 1, self.failflash)
-        #self.loop.set_alarm_at(time.time() + 1, self.passflash)
+        self.loop.set_alarm_at(time.time() + 1, self.passflash)
         self.loop.run()
 
     def failflash(self, data, userdata):

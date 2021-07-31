@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /opt/dstatus
+cd /opt/signstatus
 
 git checkout master && git pull
 pip3 install -r requirements.txt
