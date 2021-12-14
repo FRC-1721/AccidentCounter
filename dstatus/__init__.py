@@ -1,8 +1,7 @@
-# importing libraries
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
 import sys
+
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow, QPushButton
 
 
 class Window(QMainWindow):
@@ -23,16 +22,16 @@ class Window(QMainWindow):
         # creating label
         label = QLabel("I CAN DO IT", self)
 
-        button = QPushButton("CLICK", self)
-  
+        button = QPushButton("Quit", self)
+
         # setting geometry of button
         button.setGeometry(200, 150, 100, 40)
-  
+
         # changing color of button
         button.setStyleSheet("background-color : yellow")
-  
+
         # adding action to a button
-        button.clicked.connect(self.clickme)
+        button.clicked.connect(self.exitCleanly)
 
         label.setAlignment(Qt.AlignHCenter)
 
@@ -41,8 +40,8 @@ class Window(QMainWindow):
 
         # opening window in maximized size
         self.showMaximized()
-        
-    def clickme(self):
+
+    def exitCleanly(self):
         # printing pressed
         quit()
 
