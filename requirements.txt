@@ -1,1 +1,2 @@
-urwid
+PyQt5
+setuptools

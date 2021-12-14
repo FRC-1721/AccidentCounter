@@ -1,3 +1,18 @@
-# Pipenv
-Pipfile
-Pipfile.lock
+#snapcraft specifics
+/parts/
+/stage/
+/prime/
+
+*.snap
+
+.snapcraft
+__pycache__
+*.pyc
+*_source.tar.bz2
+snap/.snapcraft
+
+# Python Setuptools
+build/
+dist/
+*.egg-info
+Pipfile*

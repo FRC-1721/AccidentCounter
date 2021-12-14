@@ -1,0 +1,19 @@
+name: dstatus
+version: git
+summary: HUD for FIRST robotics build paces
+description: Fill this out later
+base: core18
+confinement: devmode
+grade: devel
+
+parts:
+  dstatus:
+    plugin: python
+    python-version: python3
+    source: .
+    stage-packages:
+      - python-six
+
+apps:
+  dstatus:
+    command: "python -m dstatus --platform wayland"
