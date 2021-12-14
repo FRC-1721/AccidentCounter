@@ -14,6 +14,15 @@ parts:
     stage-packages:
       - python-six
 
+  mesa:
+    plugin: nil
+    stage-packages:
+      - libgl1
+      - libgl1-mesa-dri
+      - libwayland-egl1-mesa
+      - libglu1-mesa
+
+
 apps:
   dstatus:
-    command: "python -m dstatus --platform wayland"
+    command: "usr/bin/python3 -m dstatus --platform wayland"
