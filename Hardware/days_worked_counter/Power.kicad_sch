@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Days Without Incident Sign")
+    (date "2022-06-24")
+    (rev "v0.1-RC1")
+    (company "FRC 1721")
+  )
+
   (lib_symbols
     (symbol "Connector:Barrel_Jack" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 5.334 0)
