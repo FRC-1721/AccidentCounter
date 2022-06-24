@@ -1,0 +1,6 @@
+[submodule "Hardware/days_worked_counter/Libraries/kenwoodfox-kicad-libraries"]
+	path = Hardware/days_worked_counter/Libraries/kenwoodfox-kicad-libraries
+	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries
+[submodule "Hardware/days_worked_counter/Libraries/Panelization.pretty"]
+	path = Hardware/days_worked_counter/Libraries/Panelization.pretty
+	url = https://github.com/madworm/Panelization.pretty.git
