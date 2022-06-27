@@ -10,7 +10,6 @@ _build
 *.*~
 
 # CAD Artifacts
-*.FCStd*
 *.stl
 
 # Doc artifacts
