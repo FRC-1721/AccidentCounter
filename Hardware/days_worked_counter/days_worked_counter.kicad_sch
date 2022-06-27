@@ -580,6 +580,9 @@
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/e3be7fd3-661c-4a07-94c1-cfada3485a68"
       (reference "#PWR0514") (unit 1) (value "GND") (footprint "")
     )
+    (path "/745ddfd5-d825-49a6-8ce0-9feedd6f4254/290bdf91-a2d0-4c48-b0a3-8cd4f45388e8"
+      (reference "#PWR?") (unit 1) (value "+19V") (footprint "")
+    )
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/4ca6956e-cd21-4918-a060-499f5c41a8e7"
       (reference "BT201") (unit 1) (value "3v") (footprint "Battery:BatteryHolder_Keystone_3034_1x20mm")
     )
