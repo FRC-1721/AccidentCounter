@@ -478,7 +478,7 @@
   (symbol (lib_id "Connector:Barrel_Jack") (at 125.73 91.44 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 35bb0209-fa0d-4429-b084-c2d6d44b24a7)
-    (property "Reference" "J401" (id 0) (at 125.73 82.55 0))
+    (property "Reference" "J401" (id 0) (at 125.73 84.455 0))
     (property "Value" "19V Input" (id 1) (at 125.73 86.36 0))
     (property "Footprint" "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal" (id 2) (at 127 92.456 0)
       (effects (font (size 1.27 1.27)) hide)
