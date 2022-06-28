@@ -134,9 +134,9 @@ jobs:
           fetch-depth: 0
 
       # Download artifacts
-      - uses: actions/download-artifact@v2
-        with:
-          name: Board-Manual
+      # - uses: actions/download-artifact@v2
+      #   with:
+      #     name: Board-Manual
 
       - uses: actions/download-artifact@v2
         with:
