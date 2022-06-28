@@ -668,7 +668,7 @@
     (in_bom yes) (on_board yes)
     (uuid 6fb99b0a-2640-4faf-9d31-f9e42ff1c0d8)
     (property "Reference" "U401" (id 0) (at 151.13 95.25 0))
-    (property "Value" "LM1117-5.0" (id 1) (at 148.59 85.09 0))
+    (property "Value" "NCV1117ST50T3G" (id 1) (at 148.59 85.09 0))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-223" (id 2) (at 148.59 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )

@@ -1078,7 +1078,7 @@
       (reference "U301") (unit 1) (value "FT232RL") (footprint "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm")
     )
     (path "/745ddfd5-d825-49a6-8ce0-9feedd6f4254/6fb99b0a-2640-4faf-9d31-f9e42ff1c0d8"
-      (reference "U401") (unit 1) (value "LM1117-5.0") (footprint "Package_TO_SOT_SMD:SOT-223")
+      (reference "U401") (unit 1) (value "NCV1117ST50T3G") (footprint "Package_TO_SOT_SMD:SOT-223")
     )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/4476a0b1-c2f6-472f-8a37-5d3a96967e4e"
       (reference "U501") (unit 1) (value "SN74HC595") (footprint "KenwoodFox:SN74HC595")

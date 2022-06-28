@@ -2955,7 +2955,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e349a6f6-f92f-4e8b-ac74-bf0e4055e0bc)
     )
-    (fp_text value "LM1117-5.0" (at 0 4.5) (layer "F.Fab") hide
+    (fp_text value "NCV1117ST50T3G" (at 0 4.5) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8248abb7-4094-45f9-872f-e053091632a1)
     )
