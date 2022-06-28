@@ -1,0 +1,81 @@
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 295:Plugin executed on: 'linux'
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 296:Plugin executed with python version: '3.10.5 (main, Jun  6 2022, 18:49:26) [GCC 12.1.0]'
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 297:KiCad build version: (6.0.6)
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 298:Plugin version: 1.1.2
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 299:Frame repr: <wx._core.Frame object at 0x7fbb20f2a290>
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 323:Preparing replicator with R803 as a reference
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 98:getting a list of all footprints on board
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 110:Footprint G*** does not have Sheetfile property, it will not be replicated. Most likely it is only in schematics
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 351:source anchor footprint is 'R803'
+Located on: ['Display Card', 'Buffer']
+With filenames: ['display_card.kicad_sch', 'buffer.kicad_sch']
+With sheet_id:['Display Card', 'Buffer']
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 358:Corresponding footprints are 
+[('R2203', ['Display Card', 'Buffer4']), ('R2103', ['Display Card', 'Buffer5']), ('R2003', ['Display Card', 'Buffer6']), ('R1503', ['Display Card', 'Buffer2']), ('R1403', ['Display Card', 'Buffer3']), ('R1103', ['Display Card', 'Buffer1']), ('R803', ['Display Card', 'Buffer'])]
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 370:Showing dialog
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 376:Toolbar position: wx.Point(1701, 163)
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 382:Dialog position: wx.Point(1337, 163)
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:constructing a list of sheets suitable for replication on level:'Display Card', file:'display_card.kicad_sch'
+06-27 23:59:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 372:suitable sheets are:[]
+06-28 00:00:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:constructing a list of sheets suitable for replication on level:'Buffer', file:'buffer.kicad_sch'
+06-28 00:00:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 372:suitable sheets are:[['Display Card', 'Buffer1'], ['Display Card', 'Buffer2'], ['Display Card', 'Buffer3'], ['Display Card', 'Buffer4'], ['Display Card', 'Buffer5'], ['Display Card', 'Buffer6']]
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:constructing a list of sheets suitable for replication on level:'Buffer', file:'buffer.kicad_sch'
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 372:suitable sheets are:[['Display Card', 'Buffer1'], ['Display Card', 'Buffer2'], ['Display Card', 'Buffer3'], ['Display Card', 'Buffer4'], ['Display Card', 'Buffer5'], ['Display Card', 'Buffer6']]
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 145:Replicating layout
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 146:Starting replication of sheets: [['Display Card', 'Buffer1'], ['Display Card', 'Buffer2'], ['Display Card', 'Buffer3'], ['Display Card', 'Buffer4'], ['Display Card', 'Buffer5'], ['Display Card', 'Buffer6']]
+on level: ['Display Card', 'Buffer']
+with tracks=True, zone=True, text=True, containing=True, remove=False, locked=False, by_group=False
+06-28 00:00:05 root 235:updating GUI message: 'Preparing for replication'
+06-28 00:00:05 root 240:updating GUI with: 0
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 215:Getting the list of source footprints
+06-28 00:00:05 root 240:updating GUI with: 0
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 230:Getting the list of all the remaining footprints
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 235:Getting nets local to source footprints
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 238:Getting source bounding box
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 242:Getting source tracks
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 257:Getting source zones
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 266:Getting source text items
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 275:Getting source drawing items
+06-28 00:00:05 root 235:updating GUI message: 'Replicating footprints'
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 669:Replicating footprints
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 675:Replicating footprints on sheet ['Display Card', 'Buffer1']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 675:Replicating footprints on sheet ['Display Card', 'Buffer2']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 675:Replicating footprints on sheet ['Display Card', 'Buffer3']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 675:Replicating footprints on sheet ['Display Card', 'Buffer4']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 675:Replicating footprints on sheet ['Display Card', 'Buffer5']
+06-28 00:00:05 root 240:updating GUI with: 83
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 675:Replicating footprints on sheet ['Display Card', 'Buffer6']
+06-28 00:00:05 root 235:updating GUI message: 'Replicating tracks'
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 835:Replicating tracks
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 841:Replicating tracks on sheet ['Display Card', 'Buffer1']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 841:Replicating tracks on sheet ['Display Card', 'Buffer2']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 841:Replicating tracks on sheet ['Display Card', 'Buffer3']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 841:Replicating tracks on sheet ['Display Card', 'Buffer4']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 841:Replicating tracks on sheet ['Display Card', 'Buffer5']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 841:Replicating tracks on sheet ['Display Card', 'Buffer6']
+06-28 00:00:05 root 235:updating GUI message: 'Replicating zones'
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 893:Replicating zones
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 900:Replicating zones on sheet ['Display Card', 'Buffer1']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 900:Replicating zones on sheet ['Display Card', 'Buffer2']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 900:Replicating zones on sheet ['Display Card', 'Buffer3']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 900:Replicating zones on sheet ['Display Card', 'Buffer4']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 900:Replicating zones on sheet ['Display Card', 'Buffer5']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 900:Replicating zones on sheet ['Display Card', 'Buffer6']
+06-28 00:00:05 root 235:updating GUI message: 'Replicating text'
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 963:Replicating text
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 970:Replicating text on sheet ['Display Card', 'Buffer1']
+06-28 00:00:05 root 240:updating GUI with: 16
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 970:Replicating text on sheet ['Display Card', 'Buffer2']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 970:Replicating text on sheet ['Display Card', 'Buffer3']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 970:Replicating text on sheet ['Display Card', 'Buffer4']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 970:Replicating text on sheet ['Display Card', 'Buffer5']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 970:Replicating text on sheet ['Display Card', 'Buffer6']
+06-28 00:00:05 root 235:updating GUI message: 'Replicating drawings'
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1003:Replicating drawings
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1009:Replicating drawings on sheet ['Display Card', 'Buffer1']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1009:Replicating drawings on sheet ['Display Card', 'Buffer2']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1009:Replicating drawings on sheet ['Display Card', 'Buffer3']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1009:Replicating drawings on sheet ['Display Card', 'Buffer4']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1009:Replicating drawings on sheet ['Display Card', 'Buffer5']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1009:Replicating drawings on sheet ['Display Card', 'Buffer6']
+06-28 00:00:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 169:Replication complete

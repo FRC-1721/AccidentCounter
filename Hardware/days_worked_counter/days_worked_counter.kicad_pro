@@ -120,6 +120,7 @@
       },
       "track_widths": [
         0.0,
+        1.0,
         2.0
       ],
       "via_dimensions": [
@@ -368,6 +369,27 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.269861,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.360923,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB Data",
+        "nets": [
+          "/USB/USB+",
+          "/USB/USB-"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6.0
       }
     ],
     "meta": {
@@ -443,35 +465,11 @@
     ],
     [
       "e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b",
-      "Display Card 0"
-    ],
-    [
-      "c6dca6b0-6120-4130-a5d8-8ac8450c22c0",
-      "Display Card 1"
-    ],
-    [
-      "71dca6e4-949c-46c2-979f-90716fc3f3f2",
-      "Display Card 2"
+      "Display Card"
     ],
     [
       "1aab81b4-daf1-44f8-8059-07ddc0eda8a1",
       "Buffer"
-    ],
-    [
-      "1aab81b4-daf1-44f8-8059-07ddc0eda8a1",
-      "Buffer"
-    ],
-    [
-      "1aab81b4-daf1-44f8-8059-07ddc0eda8a1",
-      "Buffer"
-    ],
-    [
-      "444be2df-c1ce-4b3b-9709-37f32a158d1e",
-      "Buffer1"
-    ],
-    [
-      "444be2df-c1ce-4b3b-9709-37f32a158d1e",
-      "Buffer1"
     ],
     [
       "444be2df-c1ce-4b3b-9709-37f32a158d1e",
@@ -484,46 +482,6 @@
     [
       "552ea5a8-7ef4-4338-a08b-812f4df57dc0",
       "Buffer2"
-    ],
-    [
-      "f160c593-d113-4380-bd05-5eaff54e697e",
-      "Buffer3"
-    ],
-    [
-      "552ea5a8-7ef4-4338-a08b-812f4df57dc0",
-      "Buffer2"
-    ],
-    [
-      "f160c593-d113-4380-bd05-5eaff54e697e",
-      "Buffer3"
-    ],
-    [
-      "552ea5a8-7ef4-4338-a08b-812f4df57dc0",
-      "Buffer2"
-    ],
-    [
-      "2bcbe67d-cf2e-4207-abae-4143cdc99c40",
-      "Buffer6"
-    ],
-    [
-      "261d24fc-fc36-4106-9906-50e4a0573316",
-      "Buffer5"
-    ],
-    [
-      "bfa7d6a6-338b-4cf4-b676-93b3b9683462",
-      "Buffer4"
-    ],
-    [
-      "2bcbe67d-cf2e-4207-abae-4143cdc99c40",
-      "Buffer6"
-    ],
-    [
-      "261d24fc-fc36-4106-9906-50e4a0573316",
-      "Buffer5"
-    ],
-    [
-      "bfa7d6a6-338b-4cf4-b676-93b3b9683462",
-      "Buffer4"
     ],
     [
       "2bcbe67d-cf2e-4207-abae-4143cdc99c40",
