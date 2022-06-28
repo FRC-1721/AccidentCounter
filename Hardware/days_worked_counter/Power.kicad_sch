@@ -541,7 +541,7 @@
   (symbol (lib_id "KenwoodFox:+19V") (at 137.16 86.36 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 290bdf91-a2d0-4c48-b0a3-8cd4f45388e8)
-    (property "Reference" "#PWR?" (id 0) (at 137.16 90.17 0)
+    (property "Reference" "#PWR0150" (id 0) (at 137.16 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+19V" (id 1) (at 137.16 82.55 0))
