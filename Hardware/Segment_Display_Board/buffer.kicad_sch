@@ -7,8 +7,9 @@
   (title_block
     (title "Days Without Incident Sign")
     (date "2022-06-24")
-    (rev "v0.1-RC1")
+    (rev "${REVISION}")
     (company "FRC 1721")
+    (comment 4 "Release: ${FULL_REVISION}")
   )
 
   (lib_symbols
@@ -304,6 +305,7 @@
       )
     )
   )
+
 
 
   (wire (pts (xy 150.495 92.075) (xy 152.4 92.075))

@@ -7,8 +7,9 @@
   (title_block
     (title "Days Without Incident Sign")
     (date "2022-06-24")
-    (rev "v0.1-RC1")
+    (rev "${REVISION}")
     (company "FRC 1721")
+    (comment 4 "Release: ${FULL_REVISION}")
   )
 
   (lib_symbols
@@ -234,6 +235,7 @@
       )
     )
   )
+
 
 
   (wire (pts (xy 161.925 100.965) (xy 173.99 100.965))
@@ -632,6 +634,12 @@
   )
 
   (symbol_instances
+    (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/d5acc993-27eb-4497-b91c-f07039db6bd2"
+      (reference "#FLG0201") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/745ddfd5-d825-49a6-8ce0-9feedd6f4254/95bfe6ee-aece-471a-bfa6-baaaa21e9240"
+      (reference "#FLG0401") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
     (path "/eaa55cab-0bd9-4a5a-bbbc-2cb0165ce202"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
@@ -901,6 +909,12 @@
     )
     (path "/6564c8a6-7134-401f-ba3c-a13a9f9d361c/6ef1f90d-a5c7-4eb6-9f4a-05fa47838b62"
       (reference "JP301") (unit 1) (value "SolderJumper_2_Open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+    )
+    (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/300711a0-9c12-4819-8dcc-b113b48bca13"
+      (reference "JP501") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
+    )
+    (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/1ab9f45d-77d7-4172-8c32-e2c627c28681"
+      (reference "JP502") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
     )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/1aab81b4-daf1-44f8-8059-07ddc0eda8a1/e9fe1f80-a7e5-4835-aea2-546314aa39c8"
       (reference "Q601") (unit 1) (value "MMBT3904") (footprint "Package_TO_SOT_SMD:SOT-23")

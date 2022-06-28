@@ -7,8 +7,9 @@
   (title_block
     (title "Days Without Incident Sign")
     (date "2022-06-24")
-    (rev "v0.1-RC1")
+    (rev "${REVISION}")
     (company "FRC 1721")
+    (comment 4 "Release: ${FULL_REVISION}")
   )
 
   (lib_symbols
@@ -765,7 +766,7 @@
       )
       (symbol "+3.3V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -915,6 +916,7 @@
       )
     )
   )
+
 
   (junction (at 105.41 76.2) (diameter 0) (color 0 0 0 0)
     (uuid 07d5a34a-1040-42c3-b9c7-b8b898ad1d19)
