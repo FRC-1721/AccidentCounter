@@ -1,6 +1,6 @@
-[submodule "Hardware/universal_lcd_module/Libraries/kenwoodfox-kicad-libraries"]
-	path = Hardware/universal_lcd_module/Libraries/kenwoodfox-kicad-libraries
+[submodule "Hardware/Segment_Display_Board/Libraries/kenwoodfox-kicad-libraries"]
+	path = Hardware/Segment_Display_Board/Libraries/kenwoodfox-kicad-libraries
 	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries
-[submodule "Hardware/universal_lcd_module/Libraries/Panelization.pretty"]
-	path = Hardware/universal_lcd_module/Libraries/Panelization.pretty
+[submodule "Hardware/Segment_Display_Board/Libraries/Panelization.pretty"]
+	path = Hardware/Segment_Display_Board/Libraries/Panelization.pretty
 	url = https://github.com/madworm/Panelization.pretty.git
