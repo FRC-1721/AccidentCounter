@@ -1,4 +1,5 @@
-https://raymii.org/s/tutorials/Run_software_on_tty1_console_instead_of_login_getty.html
+# Init Submodules
 
-this was helpful
-
+```shell
+git submodule update --init --recursive
+```
