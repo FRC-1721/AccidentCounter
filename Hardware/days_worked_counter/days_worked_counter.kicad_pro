@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -112,8 +118,16 @@
         "solder_mask_min_width": 0.0,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0,
+        2.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -438,6 +452,90 @@
     [
       "71dca6e4-949c-46c2-979f-90716fc3f3f2",
       "Display Card 2"
+    ],
+    [
+      "1aab81b4-daf1-44f8-8059-07ddc0eda8a1",
+      "Buffer"
+    ],
+    [
+      "1aab81b4-daf1-44f8-8059-07ddc0eda8a1",
+      "Buffer"
+    ],
+    [
+      "1aab81b4-daf1-44f8-8059-07ddc0eda8a1",
+      "Buffer"
+    ],
+    [
+      "444be2df-c1ce-4b3b-9709-37f32a158d1e",
+      "Buffer1"
+    ],
+    [
+      "444be2df-c1ce-4b3b-9709-37f32a158d1e",
+      "Buffer1"
+    ],
+    [
+      "444be2df-c1ce-4b3b-9709-37f32a158d1e",
+      "Buffer1"
+    ],
+    [
+      "f160c593-d113-4380-bd05-5eaff54e697e",
+      "Buffer3"
+    ],
+    [
+      "552ea5a8-7ef4-4338-a08b-812f4df57dc0",
+      "Buffer2"
+    ],
+    [
+      "f160c593-d113-4380-bd05-5eaff54e697e",
+      "Buffer3"
+    ],
+    [
+      "552ea5a8-7ef4-4338-a08b-812f4df57dc0",
+      "Buffer2"
+    ],
+    [
+      "f160c593-d113-4380-bd05-5eaff54e697e",
+      "Buffer3"
+    ],
+    [
+      "552ea5a8-7ef4-4338-a08b-812f4df57dc0",
+      "Buffer2"
+    ],
+    [
+      "2bcbe67d-cf2e-4207-abae-4143cdc99c40",
+      "Buffer6"
+    ],
+    [
+      "261d24fc-fc36-4106-9906-50e4a0573316",
+      "Buffer5"
+    ],
+    [
+      "bfa7d6a6-338b-4cf4-b676-93b3b9683462",
+      "Buffer4"
+    ],
+    [
+      "2bcbe67d-cf2e-4207-abae-4143cdc99c40",
+      "Buffer6"
+    ],
+    [
+      "261d24fc-fc36-4106-9906-50e4a0573316",
+      "Buffer5"
+    ],
+    [
+      "bfa7d6a6-338b-4cf4-b676-93b3b9683462",
+      "Buffer4"
+    ],
+    [
+      "2bcbe67d-cf2e-4207-abae-4143cdc99c40",
+      "Buffer6"
+    ],
+    [
+      "261d24fc-fc36-4106-9906-50e4a0573316",
+      "Buffer5"
+    ],
+    [
+      "bfa7d6a6-338b-4cf4-b676-93b3b9683462",
+      "Buffer4"
     ]
   ],
   "text_variables": {}
