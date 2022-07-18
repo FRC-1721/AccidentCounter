@@ -12,9 +12,15 @@ void setup()
     delay(200);
     Serial.begin(115200);
     Serial.println(MOTD);
+
+    // Pins
+    pinMode(13, OUTPUT);
 }
 
 void loop()
 {
-    ;
+    digitalWrite(13, HIGH);
+    delay(1000);
+    digitalWrite(13, LOW);
+    delay(1000);
 }
