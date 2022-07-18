@@ -218,7 +218,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 00e3e99f-30f5-4de9-872f-2eb4781ef387)
     )
-    (fp_text value "19V Input" (at 0 15.5) (layer "F.Fab")
+    (fp_text value "19V Input" (at 8.65 12.85) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 34c280df-804c-4794-89ca-a65de6d1c6a3)
     )
