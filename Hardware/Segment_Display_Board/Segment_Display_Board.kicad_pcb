@@ -9670,7 +9670,7 @@
   (gr_text "C" (at 152 158.5) (layer "F.SilkS") (tstamp a1fe3fc9-a65a-4be0-8de6-a2751323aa6d)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "LCD\nDisplay\nCard\n${FULL_REVISION}" (at 172.25 149.5) (layer "F.SilkS") (tstamp b47e65b4-0ca0-4a2c-84b9-9f92c8537471)
+  (gr_text "Segment\nDisplay\nCard\n${FULL_REVISION}" (at 172.25 149.5) (layer "F.SilkS") (tstamp b47e65b4-0ca0-4a2c-84b9-9f92c8537471)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify right))
   )
   (gr_text "DP" (at 147 158.5) (layer "F.SilkS") (tstamp c61f7fcd-040d-4a9d-83bc-17986e1d3645)
