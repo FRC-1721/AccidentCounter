@@ -4,7 +4,11 @@
  * @brief Source code for Tidal Force's "Days Worked Without Incident" counter.
  */
 
+// Libs
 #include "Arduino.h"
+
+// Headers
+#include "boardPins.h"
 
 void setup()
 {
