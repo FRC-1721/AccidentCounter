@@ -10,6 +10,11 @@
 // Headers
 #include "boardPins.h"
 
+// Libs
+#include "display.h"
+
+Display display(1, LATCH_PIN, CLOCK_PIN, DATA_PIN);
+
 void setup()
 {
     // Setup serial
@@ -18,13 +23,26 @@ void setup()
     Serial.println(MOTD);
 
     // Pins
-    pinMode(13, OUTPUT);
+    pinMode(STAT_LED, OUTPUT);
+    pinMode(LATCH_PIN, OUTPUT);
+    pinMode(CLOCK_PIN, OUTPUT);
+    pinMode(DATA_PIN, OUTPUT);
 }
+
+byte num = 0;
 
 void loop()
 {
-    digitalWrite(13, HIGH);
-    delay(1000);
-    digitalWrite(13, LOW);
-    delay(1000);
+    digitalWrite(STAT_LED, HIGH);
+    delay(500);
+    digitalWrite(STAT_LED, LOW);
+    delay(500);
+
+    display.setNum(num);
+
+    num++;
+    if (num > 10)
+    {
+        num = 0;
+    }
 }
