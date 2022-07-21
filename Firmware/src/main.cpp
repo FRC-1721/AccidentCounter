@@ -5,7 +5,9 @@
  */
 
 // Libs
-#include "Arduino.h"
+#include <Arduino.h>
+#include <Wire.h>
+#include <RTClib.h>
 
 // Headers
 #include "boardPins.h"
@@ -13,7 +15,12 @@
 // Libs
 #include "display.h"
 
-Display display(1, LATCH_PIN, CLOCK_PIN, DATA_PIN);
+// Objects
+Display display(3, LATCH_PIN, CLOCK_PIN, DATA_PIN);
+RTC_DS1307 rtc;
+
+// Global Vars
+uint16_t currentDay = 0;
 
 void setup()
 {
@@ -27,9 +34,10 @@ void setup()
     pinMode(LATCH_PIN, OUTPUT);
     pinMode(CLOCK_PIN, OUTPUT);
     pinMode(DATA_PIN, OUTPUT);
-}
 
-byte num = 0;
+    // Setup RTC
+    rtc.begin();
+}
 
 void loop()
 {
@@ -38,11 +46,18 @@ void loop()
     digitalWrite(STAT_LED, LOW);
     delay(500);
 
-    display.setNum(num);
+    display.setNum(currentDay);
 
-    num++;
-    if (num > 10)
+    DateTime now = rtc.now();
+
+    Serial.println(now.unixtime());
+}
+
+void serialEvent()
+{
+    while (Serial.available())
     {
-        num = 0;
+        currentDay = Serial.parseInt();
+        rtc.adjust(DateTime(SECONDS_PER_DAY * currentDay));
     }
 }

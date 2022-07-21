@@ -9,4 +9,7 @@
 #define CLOCK_PIN 9
 #define DATA_PIN 8
 
+// Board
+#define NUM_SEGMENTS 3
+
 #endif

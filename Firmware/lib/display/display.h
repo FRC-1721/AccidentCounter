@@ -15,7 +15,7 @@ private:
     uint8_t dataPin;
 
     // Settings
-    uint8_t NUM_SEGMENTS;
+    uint8_t numSegments;
 
     /** 0b1000000, // G
      *  0b0100000, // F
@@ -67,6 +67,16 @@ private:
         0b1101001, // Z
     };
 
+    /**
+     * @brief Returns the n'th digit of a base 10 number
+     *
+     * @param val A base 10 value
+     * @param n What power to extract, eg 0 for `1` in `1234`. and 2 for `3` in `1234`
+     * @return uint16_t
+     */
+    int16_t Display::nth_digit(int16_t val, int16_t n);
+    uint32_t pow[5] = {1, 10, 100, 1000, 10000};
+
 public:
     /**
      * @brief Construct a new display object
@@ -81,7 +91,13 @@ public:
     /**
      * @brief Set the number being displayed
      *
-     * @param num A number with no more digits than NUM_SEGMENTS
+     * @param num A number with no more digits than numSegments
      */
     void setNum(uint16_t num);
+
+    /**
+     * @brief Clears the screen
+     *
+     */
+    void clear();
 };
