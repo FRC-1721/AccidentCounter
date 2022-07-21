@@ -108,7 +108,7 @@ void loop()
     if (rstButton.pressed())
     {
         // Cool animation
-        for (uint16_t i = 0; i < currentDay; i++)
+        for (int16_t i = 0; i < currentDay; i++)
         {
             display.setNum(currentDay - i);
             delay((2000 / (currentDay - i)) + 100); // Speeds up as we approach
@@ -122,7 +122,10 @@ void serialEvent()
 {
     while (Serial.available())
     {
-        uint8_t newDay = Serial.parseInt();
-        rtc.adjust(DateTime(SECONDS_PER_DAY * newDay));
+        int16_t newDay = Serial.parseInt();
+        if (newDay != 0)
+        {
+            rtc.adjust(DateTime(SECONDS_PER_DAY * newDay));
+        }
     }
 }
