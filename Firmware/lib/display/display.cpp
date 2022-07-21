@@ -56,6 +56,21 @@ void Display::setNum(uint16_t num)
     digitalWrite(latchPin, HIGH); // Display it
 };
 
+void Display::setErr()
+{
+    uint8_t errText[3] = {segChars[11], segChars[12], segChars[12]};
+
+    digitalWrite(latchPin, LOW); // Set latch low (stop displaying digits)
+
+    // For every segment
+    for (uint8_t i = 0; i < numSegments; i++)
+    {
+        shiftOut(dataPin, clockPin, MSBFIRST, errText[i]); // Write every segment out
+    }
+
+    digitalWrite(latchPin, HIGH); // Display it
+};
+
 int16_t Display::nth_digit(int16_t val, int16_t n)
 {
     // A little messy

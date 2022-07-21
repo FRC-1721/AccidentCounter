@@ -27,7 +27,7 @@ private:
      */
 
     // Characters
-    const uint8_t segChars[37] = {
+    const uint8_t segChars[13] = {
         0b0111111, // 0
         0b0000110, // 1
         0b1011011, // 2
@@ -39,32 +39,8 @@ private:
         0b1111111, // 8
         0b1101111, // 9
         0b0000000, // null
-        0b1110111, // A
-        0b0011111, // b
-        0b1001110, // C
-        0b0111101, // d
-        0b1001111, // E
-        0b1000111, // F
-        0b1011110, // G
-        0b0010111, // h
-        0b0000110, // i
-        0b0111100, // j
-        0b1010111, // k
-        0b0001110, // L
-        0b1010100, // M
-        0b1110110, // N
-        0b1111110, // O
-        0b1100111, // p
-        0b1110011, // q
-        0b0000101, // r
-        0b1011011, // s
-        0b0001111, // t
-        0b0111110, // U
-        0b0111010, // V
-        0b0101010, // W
-        0b0110111, // X
-        0b0111011, // Y
-        0b1101001, // Z
+        0b1111001, // E
+        0b1010000, // r
     };
 
     /**
@@ -87,6 +63,12 @@ public:
      * @param _DATA_PIN      Data pin
      */
     Display(uint8_t _NUM_SEGMENTS, uint8_t _LATCH_PIN, uint8_t _CLOCK_PIN, uint8_t _DATA_PIN);
+
+    /**
+     * @brief Displays an err message on the screen
+     *
+     */
+    void setErr();
 
     /**
      * @brief Set the number being displayed

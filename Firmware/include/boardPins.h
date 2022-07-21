@@ -9,6 +9,11 @@
 #define CLOCK_PIN 9
 #define DATA_PIN 8
 
+// Buttons
+#define RST_PIN 2
+#define ADV_PIN 3
+#define SUB_PIN 4
+
 // Board
 #define NUM_SEGMENTS 3
 
