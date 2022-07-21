@@ -50,6 +50,9 @@ void loop()
 
     DateTime now = rtc.now();
 
+    Serial.print("RTC running: ");
+    Serial.print(rtc.isrunning());
+    Serial.print(", Time is: ");
     Serial.println(now.unixtime());
 
     currentDay++;
