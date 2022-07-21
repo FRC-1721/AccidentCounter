@@ -9688,6 +9688,9 @@
   (gr_text "A" (at 152 33.5) (layer "F.SilkS") (tstamp ee33b0bb-1886-4132-90d3-94b2b82d5276)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
+  (gr_text "Fits\n - DL2020\n - CR2025\n - CR2032" (at 143.5 56.5) (layer "F.SilkS") (tstamp fbe28268-a339-47ba-a620-b12070c4830e)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
 
   (segment (start 127.665 138.335) (end 127.665 130.835) (width 2) (layer "F.Cu") (net 1) (tstamp 0339c267-58a5-4759-97f2-81b0da8a38a1))
   (segment (start 139.6 112.1) (end 139 111.5) (width 0.25) (layer "F.Cu") (net 1) (tstamp 08bff6f4-c2ba-4d4c-9bdf-901bdca2a58f))

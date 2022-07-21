@@ -51,6 +51,13 @@ void loop()
     DateTime now = rtc.now();
 
     Serial.println(now.unixtime());
+
+    currentDay++;
+
+    if (currentDay > 999)
+    {
+        currentDay = 0;
+    }
 }
 
 void serialEvent()
