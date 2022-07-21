@@ -87,7 +87,7 @@ void loop()
 
     // Get time
     DateTime now = rtc.now();
-    int16_t currentDay = now.unixtime() / SECONDS_PER_DAY;
+    uint16_t currentDay = now.unixtime() / SECONDS_PER_DAY;
 
     // Set time
     display.setNum(currentDay);
@@ -102,7 +102,16 @@ void loop()
 
     if (subButton.pressed())
     {
-        rtc.adjust(DateTime(SECONDS_PER_DAY * (currentDay - 1))); // One less day
+        if (currentDay > 0)
+        {
+            rtc.adjust(DateTime(SECONDS_PER_DAY * (currentDay - 1))); // One less day}
+        }
+        else
+        {
+            // You cant go less than 0
+            display.setErr();
+            delay(500);
+        }
     }
 
     if (rstButton.pressed())
