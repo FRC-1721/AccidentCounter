@@ -41,4 +41,4 @@ test:
 debug: flash monitor
 
 monitor:
-	pio device monitor --port $(SERIAL_DEV) --filter=direct --filter=time
+	pio device monitor --filter=direct --filter=time
