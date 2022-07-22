@@ -42,7 +42,7 @@ void setup()
 
     // Setup timers
     Timer1.initialize(1000000); // Every second
-    Timer1.attachInterrupt(statBlink);
+    Timer1.attachInterrupt(blink);
 
     // Setup RTC
     if (!rtc.begin())
@@ -52,7 +52,6 @@ void setup()
         while (1)
         {
             display.setErr(); // Set error on display
-            curState = ERR;   // Error mode
             delay(100);
         }
     }
@@ -78,8 +77,6 @@ void setup()
 
 void loop()
 {
-    curState = RUN; // Run mode
-
     // Update buttons
     advButton.update();
     subButton.update();
