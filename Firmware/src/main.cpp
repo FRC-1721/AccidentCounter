@@ -8,12 +8,10 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <RTClib.h>
-#include <TimerOne.h>
 #include <Bounce2.h>
 
 // Headers
 #include "boardPins.h"
-#include "stat.h"
 
 // Libs
 #include "display.h"
@@ -39,10 +37,6 @@ void setup()
     pinMode(LATCH_PIN, OUTPUT);
     pinMode(CLOCK_PIN, OUTPUT);
     pinMode(DATA_PIN, OUTPUT);
-
-    // Setup timers
-    Timer1.initialize(1000000); // Every second
-    Timer1.attachInterrupt(blink);
 
     // Setup RTC
     if (!rtc.begin())
@@ -86,6 +80,9 @@ void loop()
     DateTime now = rtc.now();
     uint16_t currentDay = now.unixtime() / SECONDS_PER_DAY;
 
+    // Flash LED
+    digitalWrite(STAT_LED, now.unixtime() % 2 == 0);
+
     // Set time
     display.setNum(currentDay);
 
@@ -107,7 +104,7 @@ void loop()
         {
             // You cant go less than 0
             display.setErr();
-            delay(500);
+            delay(1000);
         }
     }
 
