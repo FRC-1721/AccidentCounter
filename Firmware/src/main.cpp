@@ -21,6 +21,7 @@ Display display(3, LATCH_PIN, CLOCK_PIN, DATA_PIN);
 RTC_DS1307 rtc;
 
 // Buttons
+const uint8_t buttonInterval = 8;
 Bounce2::Button advButton = Bounce2::Button();
 Bounce2::Button subButton = Bounce2::Button();
 Bounce2::Button rstButton = Bounce2::Button();
@@ -61,11 +62,11 @@ void setup()
     rstButton.attach(RST_PIN, INPUT);
 
     // Configure buttons
-    advButton.interval(5);
+    advButton.interval(buttonInterval);
     advButton.setPressedState(LOW);
-    subButton.interval(5);
+    subButton.interval(buttonInterval);
     subButton.setPressedState(LOW);
-    rstButton.interval(5);
+    rstButton.interval(buttonInterval);
     rstButton.setPressedState(LOW);
 }
 
@@ -111,7 +112,7 @@ void loop()
     if (rstButton.pressed())
     {
         // Cool animation
-        for (int16_t i = 0; i < currentDay; i++)
+        for (uint16_t i = 0; i < currentDay; i++)
         {
             display.setNum(currentDay - i);
             delay((2000 / (currentDay - i)) + 100); // Speeds up as we approach

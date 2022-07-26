@@ -50,8 +50,8 @@ private:
      * @param n What power to extract, eg 0 for `1` in `1234`. and 2 for `3` in `1234`
      * @return uint16_t
      */
-    int16_t Display::nth_digit(int16_t val, int16_t n);
-    uint32_t pow[5] = {1, 10, 100, 1000, 10000};
+    int16_t nth_digit(int16_t val, int16_t n);
+    uint32_t pow[8] = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000};
 
 public:
     /**
