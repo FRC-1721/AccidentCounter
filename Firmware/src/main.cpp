@@ -6,7 +6,7 @@
 
 // Libs
 #include <Arduino.h>
-#include <Watchdog.h>
+#include <avr/wdt.h>
 #include <Wire.h>
 #include <RTClib.h>
 #include <Bounce2.h>
@@ -35,7 +35,7 @@ void setup()
     Serial.println(MOTD);
 
     // Configure Watchdog
-    watchdog.enable(Watchdog::TIMEOUT_1S);
+    wdt_enable(WDTO_4S);
 
     // Pins
     pinMode(STAT_LED, OUTPUT);
@@ -77,7 +77,7 @@ void setup()
 void loop()
 {
     // Reset the watchdog counter
-    watchdog.reset();
+    wdt_reset();
 
     // Update buttons
     advButton.update();
@@ -112,7 +112,7 @@ void loop()
         {
             // You cant go less than 0
             display.setErr();
-            delay(1000);
+            delay(800);
         }
     }
 
@@ -122,6 +122,7 @@ void loop()
         for (uint16_t i = 0; i < currentDay; i++)
         {
             display.setNum(currentDay - i);
+            wdt_reset();
             delay((2000 / (currentDay - i)) + 100); // Speeds up as we approach
         }
 
