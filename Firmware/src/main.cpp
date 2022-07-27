@@ -6,6 +6,7 @@
 
 // Libs
 #include <Arduino.h>
+#include <Watchdog.h>
 #include <Wire.h>
 #include <RTClib.h>
 #include <Bounce2.h>
@@ -32,6 +33,9 @@ void setup()
     delay(200);
     Serial.begin(115200);
     Serial.println(MOTD);
+
+    // Configure Watchdog
+    watchdog.enable(Watchdog::TIMEOUT_1S);
 
     // Pins
     pinMode(STAT_LED, OUTPUT);
@@ -72,6 +76,9 @@ void setup()
 
 void loop()
 {
+    // Reset the watchdog counter
+    watchdog.reset();
+
     // Update buttons
     advButton.update();
     subButton.update();
