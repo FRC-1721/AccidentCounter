@@ -672,16 +672,16 @@
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/dec6f5b0-548e-437d-b7ab-56568cee82cc"
       (reference "#PWR0205") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/5b3314d8-7ccc-4002-bda1-efdf18bc928a"
-      (reference "#PWR0206") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/5d7b5ca0-3bc9-4676-b930-95d9c83c27cd"
-      (reference "#PWR0207") (unit 1) (value "GND") (footprint "")
-    )
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/5367efa3-065a-45e5-be3b-78161b59b4a2"
-      (reference "#PWR0208") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0206") (unit 1) (value "GND") (footprint "")
     )
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/fcb60cea-8d01-4e21-9d42-e046c66cf084"
+      (reference "#PWR0207") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/5b3314d8-7ccc-4002-bda1-efdf18bc928a"
+      (reference "#PWR0208") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/5d7b5ca0-3bc9-4676-b930-95d9c83c27cd"
       (reference "#PWR0209") (unit 1) (value "GND") (footprint "")
     )
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/fac5923b-92d4-4dc3-a8f9-5b0113fd3081"
@@ -792,29 +792,26 @@
     (path "/745ddfd5-d825-49a6-8ce0-9feedd6f4254/6ff05d53-59c0-4e0e-9ab8-2a784db06745"
       (reference "#PWR0409") (unit 1) (value "GND") (footprint "")
     )
-    (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/e9993f05-2e88-4d65-8e2c-4aa8865beb50"
+    (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/d2cd6d7c-5456-4bd3-b882-80cf408b5702"
       (reference "#PWR0501") (unit 1) (value "GND") (footprint "")
     )
-    (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/ef89e3d4-cc9e-4a2a-89e7-69fb9e9bbf9a"
-      (reference "#PWR0502") (unit 1) (value "GND") (footprint "")
-    )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/aa9c0d5e-8661-4c99-b418-5d74db46522c"
-      (reference "#PWR0503") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0502") (unit 1) (value "+5V") (footprint "")
     )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/b0e3541f-9abc-458e-b830-adedde553e33"
-      (reference "#PWR0504") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0503") (unit 1) (value "GND") (footprint "")
     )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/da90b45c-369f-492e-99e8-a941a2dcdd5f"
-      (reference "#PWR0505") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0504") (unit 1) (value "+5V") (footprint "")
     )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/6ac8ffc6-c990-4459-aa07-4ab04eb0e5f0"
-      (reference "#PWR0506") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0505") (unit 1) (value "GND") (footprint "")
     )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/b8ca7acf-cddb-43f2-acfe-39cf99f7860b"
-      (reference "#PWR0507") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0506") (unit 1) (value "+5V") (footprint "")
     )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/5ef58ffb-cb7b-47b3-8915-f4d3823c0f62"
-      (reference "#PWR0508") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0507") (unit 1) (value "GND") (footprint "")
     )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/1aab81b4-daf1-44f8-8059-07ddc0eda8a1/4bd08526-e8ff-4420-956b-c1acfcb64782"
       (reference "#PWR0601") (unit 1) (value "GND") (footprint "")
@@ -929,12 +926,6 @@
     )
     (path "/745ddfd5-d825-49a6-8ce0-9feedd6f4254/35bb0209-fa0d-4429-b084-c2d6d44b24a7"
       (reference "J401") (unit 1) (value "19V Input") (footprint "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal")
-    )
-    (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/c2579ec5-617b-430a-ab34-eac09eb3e08f"
-      (reference "J501") (unit 1) (value "Bottom Conn") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
-    )
-    (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/3673c2aa-36f7-4c6f-bf92-65a8256f77ae"
-      (reference "J502") (unit 1) (value "Top Conn") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
     )
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/8272bf65-ac58-4265-bbfa-781b0fa0d3e3"
       (reference "JP201") (unit 1) (value "RSTBridge") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
@@ -1119,8 +1110,11 @@
     (path "/745ddfd5-d825-49a6-8ce0-9feedd6f4254/6fb99b0a-2640-4faf-9d31-f9e42ff1c0d8"
       (reference "U401") (unit 1) (value "NCV1117ST50T3G") (footprint "Package_TO_SOT_SMD:SOT-223")
     )
+    (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/218f1460-fb61-4a3f-bdc6-2a5d2428cc32"
+      (reference "U501") (unit 1) (value "5inSegment") (footprint "KenwoodFox:5inSegment")
+    )
     (path "/e578bf18-fecf-4fc4-8e6f-ece5d8a7ea5b/4476a0b1-c2f6-472f-8a37-5d3a96967e4e"
-      (reference "U501") (unit 1) (value "SN74HC595") (footprint "KenwoodFox:SN74HC595")
+      (reference "U502") (unit 1) (value "SN74HC595") (footprint "KenwoodFox:SN74HC595")
     )
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/bc6b35c4-4ca5-4a60-983e-b797d19136e1"
       (reference "Y201") (unit 1) (value "16mHz") (footprint "Crystal:Crystal_SMD_HC49-SD")
