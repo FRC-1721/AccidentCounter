@@ -47,7 +47,7 @@ outputs:
     comment: Gerbers compatible with PCBWay
     type: gerber
     dir: PCBWay
-    options: &gerber_options
+    options:
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
       plot_sheet_reference: false
@@ -114,7 +114,7 @@ outputs:
     comment: Gerbers compatible with JLCPCB
     type: gerber
     dir: JLCPCB
-    options: &gerber_options
+    options:
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
       plot_sheet_reference: false
