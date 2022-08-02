@@ -148,7 +148,9 @@ jobs:
 
       - run: cp *.step _staging/
 
+      # Copy gerbers
       - run: cp PCBWay/*.zip _staging/Board-$(git rev-parse --short HEAD)-PCBWay.zip
+      - run: cp JLCPCB/*.zip _staging/Board-$(git rev-parse --short HEAD)-JLCPCB.zip
 
       - name: Upload Docs to release
         uses: svenstaro/upload-release-action@v2
