@@ -20,6 +20,21 @@ preflight:
     - name: "KENWOODFOX_3DMODELS" # My custom libs!
       command: "echo 'Hardware/Segment_Display_Board/Libraries/kenwoodfox-kicad-libraries/3d'"
 
+filters:
+  - name: only_jlc_parts
+    comment: "Only parts with JLC code"
+    type: generic
+    include_only:
+      - column: "LCSC#"
+        regex: '^C\d+'
+
+variants:
+  - name: rotated
+    comment: "Just a place holder for the rotation filter"
+    type: kibom
+    variant: rotated
+    pre_transform: _rot_footprint
+
 outputs:
   - name: "Images"
     comment: "Schematics and media for use in docs"
@@ -37,7 +52,8 @@ outputs:
       rotate_x: -1
       rotate_y: 2
       zoom: 3
-      wait_rt: 20
+      wait_render: 20
+      width: 600
 
   # ======
   # PCBWay
