@@ -657,6 +657,9 @@
     (path "/73c39ef3-fd99-4a94-8f6b-639109283fec"
       (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
     )
+    (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/04d990ac-5381-4009-81d4-6997d7c14500"
+      (reference "#PWR0107") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/cbe3a40e-05d6-4b4c-bc71-d9a218a4165e"
       (reference "#PWR0201") (unit 1) (value "GND") (footprint "")
     )
@@ -917,6 +920,9 @@
     )
     (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/315b65b6-c73a-4842-9b0d-fe7fa178eb60"
       (reference "J201") (unit 1) (value "Tag Connect") (footprint "Connector:Tag-Connect_TC2050-IDC-FP_2x05_P1.27mm_Vertical")
+    )
+    (path "/5b3b94e9-8561-416b-92c8-c061c8d10891/ba7b5b40-5294-4c39-b885-91524cb82591"
+      (reference "J202") (unit 1) (value "EXT BTN") (footprint "Connector_JST:JST_EH_S4B-EH_1x04_P2.50mm_Horizontal")
     )
     (path "/6564c8a6-7134-401f-ba3c-a13a9f9d361c/45306740-8bd2-4e2c-8469-31bc5dd3077e"
       (reference "J301") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal")
