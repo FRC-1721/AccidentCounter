@@ -3264,7 +3264,7 @@
     (property "Sheetname" "USB")
     (path "/6564c8a6-7134-401f-ba3c-a13a9f9d361c/b792b850-fc2e-4c7f-86c9-933828e44074")
     (attr through_hole)
-    (fp_text reference "J302" (at -3.5 -1) (layer "F.SilkS")
+    (fp_text reference "J302" (at 2.58 1.27 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9c3a9c02-3a14-4c47-94c8-313794d9e9ca)
     )
