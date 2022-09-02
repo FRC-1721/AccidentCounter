@@ -1,6 +1,8 @@
 [![Display Hardware](https://github.com/FRC-1721/AccidentCounter/actions/workflows/hardware_workflow.yml/badge.svg)](https://github.com/FRC-1721/AccidentCounter/actions/workflows/hardware_workflow.yml)
 [![Firmware Workflow](https://github.com/FRC-1721/AccidentCounter/actions/workflows/firmware_workflow.yml/badge.svg)](https://github.com/FRC-1721/AccidentCounter/actions/workflows/firmware_workflow.yml)
 
+Watch the [Youtube Video here.](https://www.youtube.com/watch?v=R463rN57n-0)
+
 ![The sign installed in the build space](Static/installed.jpg)
 
 # Welcome!
