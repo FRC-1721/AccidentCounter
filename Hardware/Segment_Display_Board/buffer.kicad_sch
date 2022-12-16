@@ -348,6 +348,11 @@
     (uuid f14cedab-4503-430f-8a9b-593b7195ed43)
   )
 
+  (text "1k : 19ma\n680: 27ma" (at 170.815 109.22 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 1239f686-21cb-40ce-868b-120027d25770)
+  )
+
   (hierarchical_label "OUT" (shape output) (at 185.42 99.06 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 30a3d1e5-6db4-4741-bab5-13c5eb5eb64a)
@@ -408,7 +413,7 @@
     (in_bom yes) (on_board yes)
     (uuid 931b29eb-3f5d-42fd-8f4a-dfcedff64e5e)
     (property "Reference" "R603" (id 0) (at 167.64 100.965 90))
-    (property "Value" "680R" (id 1) (at 168.91 102.87 90))
+    (property "Value" "TBD" (id 1) (at 168.91 102.87 90))
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (id 2) (at 170.815 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
