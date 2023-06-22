@@ -63,7 +63,7 @@ void Display::setErr()
     digitalWrite(latchPin, LOW); // Set latch low (stop displaying digits)
 
     // For every segment
-    for (uint8_t i = 0; i < sizeof(errText) / sizeof(uint8_t); i++)
+    for (uint8_t i = 0; (i < sizeof(errText) / sizeof(uint8_t)) && i < numSegments; i++)
     {
         shiftOut(dataPin, clockPin, MSBFIRST, errText[i]); // Write every segment out
     }
