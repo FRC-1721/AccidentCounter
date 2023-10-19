@@ -15,6 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     name: KiCad Hardware
 
+    strategy:
+      matrix:
+        variant:
+          - Segment_Display_Board
+          - Controller
+
     steps:
       - uses: actions/checkout@v2
         with:
@@ -29,13 +35,13 @@ jobs:
           dir: _hardwareOutput
 
           # Hardware Files
-          schema: "Hardware/Segment_Display_Board/Segment_Display_Board.kicad_sch"
-          board: "Hardware/Segment_Display_Board/Segment_Display_Board.kicad_pcb"
+          schema: "Hardware/${{ matrix.variant }}/${{ matrix.variant }}.kicad_sch"
+          board: "Hardware/${{ matrix.variant }}/${{ matrix.variant }}.kicad_pcb"
 
       - name: upload results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
-          name: Board-Hardware
+          name: ${{ matrix.variant }}
           path: _hardwareOutput
 
       - name: Discord notification if failed
@@ -127,20 +133,26 @@ jobs:
     # needs: [make_docs, KiCad_Hardware]
     needs: [KiCad_Hardware]
 
+    strategy:
+      matrix:
+        variant:
+          - Segment_Display_Board
+          - Controller
+
     steps:
       # Be in our repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       # Download artifacts
-      # - uses: actions/download-artifact@v2
+      # - uses: actions/download-artifact@v3
       #   with:
       #     name: Board-Manual
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
-          name: Board-Hardware
+          name: ${{ matrix.variant }}
 
       - run: mkdir -p _staging/
 
@@ -149,8 +161,11 @@ jobs:
       - run: cp *.step _staging/
 
       # Copy gerbers
-      - run: cp PCBWay/*.zip _staging/Board-$(git rev-parse --short HEAD)-PCBWay.zip
-      - run: cp JLCPCB/*.zip _staging/Board-$(git rev-parse --short HEAD)-JLCPCB.zip
+      - run: cp PCBWay/*.zip _staging/${{ matrix.variant }}-$(git rev-parse --short HEAD)-PCBWay.zip
+      - run: cp JLCPCB/*.zip _staging/${{ matrix.variant }}-$(git rev-parse --short HEAD)-JLCPCB.zip
+
+      # Copy BOMs
+      - run: cp *.csv _staging/
 
       - name: Upload Docs to release
         uses: svenstaro/upload-release-action@v2
